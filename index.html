@@ -10,7 +10,6 @@
 
     <title>Patrick Thompson</title>
     <style>
-
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -19,6 +18,25 @@
             -ms-user-select: none;
             user-select: none;
         }
+
+        .bg-dark {
+            background-color: black !important;
+        }
+
+        @media (min-width: 992px) {
+            .nav-logo-hider {
+                display: none;
+            }
+
+            
+        }
+
+        @media (max-width: 992px) {
+            .home-hider {
+                display: none;
+            }
+        }
+        
 
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
@@ -37,30 +55,52 @@
             display: none !important;
         }
     </style>
+
 </head>
+
 <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
             <div class="inner">
                 <!--<h3 class="masthead-brand">Cover</h3> nav-masthead -->
-                <nav class="nav justify-content-center">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">About Me</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Contact</a>
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand nav-logo-hider" href="http://thompsonpa.github.io">Patrick Thompson</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link home-hider" href="#" aria-disabled="false">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" aria-disabled="false">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" aria-disabled="false">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" aria-disabled="false">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
-
-        <main role="main" class="inner cover">
-            <h5 class="cover-heading">Hello My Name is</h5>
-            <h1 class="cover-heading">Patrick Thompson</h1>
-            <p class="lead">I am a Web and Software Developer Located in Maine, USA. I enjoy Developing and Designing Applications that make current workflows be inviting to the eye, responsive, and easy to use.</p>
+        <main role="main" class="inner cover cover-container" style="margin: auto;">
+            <div class="jumbotron">
+                <h5 class="cover-heading" style="color:black">Hello My Name is</h5>
+                <h1 class="cover-heading" style="color:black">Patrick Thompson</h1>
+                <p class="lead" style="color:black">I am a Web and Software Developer Located in Maine, USA. I enjoy Developing and Designing Applications that make current workflows be inviting to the eye, responsive, and easy to use.</p>
+                <div>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn More About Me</a>
+                </div>
+            </div>
             <!--<p class="lead">
                 <a href="https://getbootstrap.com/docs/4.3/examples/cover/#" class="btn btn-lg btn-secondary">Learn more</a>
             </p>-->
         </main>
-
         <footer class="mastfoot mt-auto">
             <div class="inner">
                 <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
