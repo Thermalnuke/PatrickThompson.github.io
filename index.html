@@ -8,46 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Patrick Thompson</title>
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+    <title>PT - Home</title>
 
-        .bg-dark {
-            background-color: black !important;
-        }
-
-        @media (min-width: 992px) {
-            .nav-logo-hider {
-                display: none;
-            }
-
-            
-        }
-
-        @media (max-width: 992px) {
-            .home-hider {
-                display: none;
-            }
-        }
-        
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
     <!-- Custom styles for this template -->
     <link rel="icon" href="data:;base64,=">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link href="./CSS/cover.css" rel="stylesheet">
+    <link href="./CSS/animations.css" rel="stylesheet">
     <style type="text/css">
 
         :root #content > #right > .dose > .dosesingle,
@@ -59,29 +26,27 @@
 </head>
 
 <body class="text-center">
-
     <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
             <div class="inner">
-                <!--<h3 class="masthead-brand">Cover</h3> nav-masthead -->
-                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand nav-logo-hider" href="http://thompsonpa.github.io">Patrick Thompson</a>
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light animatable fadeInDown">
+                    <a class="navbar-brand nav-logo-hider" href="./index.html">Patrick Thompson</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
                             <li class="nav-item active">
-                                <a class="nav-link home-hider" href="#" aria-disabled="false">Home</a>
+                                <a class="nav-link home-hider" href="./index.html" aria-disabled="false">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" aria-disabled="false">About Me</a>
+                                <a class="nav-link" href="./about.html" aria-disabled="true">About Me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" aria-disabled="false">Projects</a>
+                                <a class="nav-link" href="#" aria-disabled="true">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" aria-disabled="false">Contact</a>
+                                <a class="nav-link" href="#" aria-disabled="true">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -89,12 +54,12 @@
             </div>
         </header>
         <main role="main" class="inner cover cover-container" style="margin: auto;">
-            <div class="jumbotron">
+            <div class="jumbotron animatable bounceIn">
                 <h5 class="cover-heading" style="color:black">Hello My Name is</h5>
                 <h1 class="cover-heading" style="color:black">Patrick Thompson</h1>
                 <p class="lead" style="color:black">I am a Web and Software Developer Located in Maine, USA. I enjoy Developing and Designing Applications that make current workflows be inviting to the eye, responsive, and easy to use.</p>
                 <div>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn More About Me</a>
+                    <a class="btn btn-primary btn-lg" href="./about.html" role="button">Learn More About Me</a>
                 </div>
             </div>
             <!--<p class="lead">
@@ -112,5 +77,30 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+
+        jQuery(function ($) {
+            // Function which adds the 'animated' class to any '.animatable' in view
+            var doAnimations = function () {
+                // Calc current offset and get all animatables
+                var offset = $(window).scrollTop() + $(window).height(),
+                    $animatables = $('.animatable');
+                // Unbind scroll handler if we have no animatables
+                if ($animatables.length == 0) {
+                    $(window).off('scroll', doAnimations);
+                }
+                // Check all animatables and animate them if necessary
+                $animatables.each(function (i) {
+                    var $animatable = $(this);
+                    if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                        $animatable.removeClass('animatable').addClass('animated');
+                    }
+                });
+            };
+            // Hook doAnimations on scroll, and trigger a scroll
+            $(window).on('scroll', doAnimations);
+            $(window).trigger('scroll');
+        });
+    </script>
 </body>
 </html>
