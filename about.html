@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./CSS/animations.css" rel="stylesheet">
+    <link href="./CSS/hover-box.css" rel="stylesheet">
+    <link href="./CSS/styles.css" rel="stylesheet">
 
     <title>PT - About Me</title>
     <style>
@@ -17,9 +19,10 @@
                 display: none;
             }
         }
+
         @media (max-width: 992px) {
             .home-hider {
-                  display: none;
+                display: none;
             }
         }
     </style>
@@ -62,7 +65,7 @@
             <div class="col-md-4">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded animatable fadeInDown">
                     <img src="./Icons/placeholder-profile.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">                     
+                    <div class="card-body">
                         <div class="row">
                             <div class="col-2">
                                 <a href="mailto:thompsonpa2014@gmail.com"><div style="background-image: url('./Icons/iconfinder_gmail_email.png'); background-repeat: no-repeat; background-position: center;background-size: 35px; width:35px; height:35px;"></div></a>
@@ -103,8 +106,9 @@
                 <div class="shadow-lg p-3 mb-5 bg-white rounded">
                     <div class="row">
                         <div class="col-md-12">
-                            <div style="text-align:center">
+                            <div style="text-align:center;">
                                 <h3>My Skills</h3>
+                                <p>That I currently use everyday!</p>
                             </div>
                         </div>
                     </div>
@@ -112,29 +116,41 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/net_logo_white.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/net_logo_white.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/csharp_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/csharp_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slidedown">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/html_css_logo.jpg'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/html_css_logo.jpg'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slidedown">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/javascript_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/javascript_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slideleft">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -143,30 +159,184 @@
                     <br />
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/visual-studio_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                            <div class="card animatable bounceInRight">
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/visual-studio_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slideright">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/bootstrap_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                            <div class="card animatable bounceInRight">
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/bootstrap_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/sqlserver_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                            <div class="card animatable bounceInRight">
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/sqlserver_logo.png'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slideup">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="card animatable bounceInLeft">
-                                <div class="card-body">
-                                    <div style="background-image: url('./Images/Logos/kentico_logo.jpg'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                            <div class="card animatable bounceInRight">
+                                <div class="card-body nopadding hvrbox">
+                                    <div class="hvrbox-layer_bottom" style="background-image: url('./Images/Logos/kentico_logo.jpg'); background-repeat: no-repeat; background-position: center; background-size: 150px; width:150px; height:150px;margin:auto;"></div>
+                                    <div class="hvrbox-layer_top hvrbox-layer_slideleft">
+                                        <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="text-align:center;">
+                                <h3>Other Skills</h3>
+                                <p>That I use occasionally, used in the past, or I am still learning!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:center !important;">
+                            <div id="filters" class="button-group" style="text-align:center !important; width:100%;">
+                                <button class="button is-checked" data-filter="*">show all</button>
+                                <button class="button" data-filter=".programming">Programming</button>
+                                <button class="button" data-filter=".software">Software</button>
+                                <button class="button" data-filter=".operating">Other</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="grid">
+                                <div class="element-item software" data-category="software">
+                                    <span class=" btn btn-primary software" data-category="software">Azure Devops</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">Beyond Compare</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">SQL Management Studio</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">Github</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">Filezilla</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">Unity</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">Redgate</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">Visual Studio Code</span>
+                                </div>
+                                <div class="element-item software" data-category="software">
+                                    <span class="btn btn-primary">IIS Manager</span>
+                                </div>
+                                <div class="element-item programming" data-category="programming">
+                                    <span class="btn btn-secondary">VB.NET</span>
+                                </div>
+                                <div class="element-item programming" data-category="programming">
+                                    <span class="btn btn-secondary">Visual Basic</span>
+                                </div>
+                                <div class="element-item programming" data-category="programming">
+                                    <span class="btn btn-secondary">Web API 2.0</span>
+                                </div>
+                                <div class="element-item programming" data-category="programming">
+                                    <span class="btn btn-secondary">C++</span>
+                                </div>
+                                <div class="element-item programming" data-category="programming">
+                                    <span class="btn btn-secondary">PLSQL</span>
+                                </div>
+                                <div class="element-item programming" data-category="programming">
+                                    <span class="btn btn-secondary">Oracle SQL</span>
+                                </div>
+                                <div class="element-item operating" data-category="operating">
+                                    <span class="btn btn-dark">Ubuntu Linux</span>
+                                </div>
+                                <div class="element-item operating" data-category="operating">
+                                    <span class="btn btn-dark">Windows</span>
+                                </div>
+                                <div class="element-item operating" data-category="operating">
+                                    <span class="btn btn-dark">Mac OSX</span>
+                                </div>
+                                <div class="element-item operating" data-category="operating">
+                                    <span class="btn btn-dark">Kali Linux</span>
+                                </div>
+                                <div class="element-item operating" data-category="operating">
+                                    <span class="btn btn-dark">Windows Server</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="text-align:center;">
+                                <h3>Experience</h3>
+                                <!--<p>That I use occasionally, used in the past, or I am still learning!</p>-->
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="media">
+                                <img src="..." class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Life is Code, <span style="font-size:14px;">Co-Owner</span></h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                            <br />
+                            <div class="media">
+                                <img src="..." class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Northern Light Health, <span style="font-size:14px;">Brewer, ME</span></h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                            <br />
+                            <div class="media">
+                                <img src="..." class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">Lighthouse Web Solutions, <span style="font-size:14px;">Bangor, ME</span></h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                            </div>
+                            <br />
+                            <div class="media">
+                                <img src="..." class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0">State of Maine OIT, <span style="font-size:14px;">Augusta, ME</span></h5>
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                                 </div>
                             </div>
                         </div>
@@ -175,12 +345,13 @@
             </div>
         </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="./js/hover-box.js"></script>
     <script>
 
         jQuery(function ($) {
@@ -204,6 +375,40 @@
             // Hook doAnimations on scroll, and trigger a scroll
             $(window).on('scroll', doAnimations);
             $(window).trigger('scroll');
+        });
+    </script>
+
+    <script>
+        var $grid = $('.grid').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: '.name',
+                symbol: '.symbol',
+                number: '.number parseInt',
+                category: '[data-category]',
+                weight: function (itemElem) {
+                    var weight = $(itemElem).find('.weight').text();
+                    return parseFloat(weight.replace(/[\(\)]/g, ''));
+                }
+            }
+        });
+
+        // bind filter button click
+        $('#filters').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterValue;
+            $grid.isotope({ filter: filterValue });
+        });
+
+        // change is-checked class on buttons
+        $('.button-group').each(function (i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'button', function () {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $(this).addClass('is-checked');
+            });
         });
     </script>
 </body>
