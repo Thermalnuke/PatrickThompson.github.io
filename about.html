@@ -18,22 +18,41 @@
             .nav-logo-hider {
                 display: none;
             }
+            .isogrid {
+                height: 200px !important;
+            }
+
         }
 
         @media (max-width: 992px) {
             .home-hider {
                 display: none;
             }
+            .isogrid {
+                height: 350px !important;
+            }
+        }
+
+        .ProfileImageHover img:last-child {
+            display: none
+        }
+
+        .ProfileImageHover:hover img:first-child {
+            display: none
+        }
+
+        .ProfileImageHover:hover img:last-child {
+            display: inline-block
         }
     </style>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light animatable fadeInDown text-center">
         <a class="navbar-brand nav-logo-hider" href="./index.html">Patrick Thompson</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
                 <li class="nav-item">
                     <a class="nav-link home-hider" href="./index.html" aria-disabled="true">Home</a>
@@ -42,7 +61,7 @@
                     <a class="nav-link" href="./about.html" aria-disabled="false">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" aria-disabled="true">Projects</a>
+                    <a class="nav-link" target="_blank" href="https://github.com/Thompsonpa" aria-disabled="true">Code Samples</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +70,10 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded animatable fadeInDown">
-                    <img src="./Images/Patrick Headshot - Cropped.jpg" class="card-img-top" alt="./Icons/placeholder-profile.jpg" />
+                    <div class="ProfileImageHover">
+                        <img src="./Images/Patrick Headshot - Cropped.jpg" class="card-img-top"/>
+                        <img src="./Images/Patrick Headshot - Cape.jpg" class="card-img-top"/>
+                    </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-2">
@@ -76,23 +98,20 @@
                         <br />
                         <div class="row">
                             <div class="col-md-12" style="text-align:center">
-                                <a href="#" class="btn btn-success">Download My Resume</a>
+                                <a href="./Documents/Patrick_Thompson_Resume.docx" class="btn btn-success" download>Download My Resume</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
-                <!--<div style="text-align:left;">
-                <h1>About Me</h1>
-            </div>-->
                 <div class="shadow-lg p-3 mb-5 bg-white rounded animatable bounceInRight">
                     <div style="text-align:center;">
                         <h3>About Me</h3>
                     </div>
                     <br />
                     <p>Patrick Thompson is a Web Software Developer at <a href="https://northernlighthealth.org">Northern Light Health</a>, Patrick is also a Web Developer and co-founder for <a href="http://lifeiscode.com">Life Is Code</a>. Patrick develops web and software solutions for clients and users, including excellent customer service and expertise in web software technology.</p>
-                    <p>Patrick has 5 years of Web Development with a few organizations while living in Maine, including the State of Maine OIT (Office of Information Technology), Lighthouse Web Solutions, and Northern Light Heath. Patrick in some of his freetime is also Freelancing with several small businesses to increase their web presence and to improve their current workflows using web technologies. You can expect high quality work, solutions that will fit your needs, and a fun relaxed professional who enjoys what he does for clients and users.</p>
+                    <p>Patrick has 5 years of Web Development with a few organizations while living in Maine, including the State of Maine OIT (Office of Information Technology), Lighthouse Web Solutions, and Northern Light Heath. Patrick in some of his free time is also Freelancing with several small businesses to increase their web presence and to improve their current workflows using web technologies. Patrick is Educated and is eager to learn new technology to advance his career. You can expect high quality work, solutions that will fit your needs, and a fun relaxed professional who enjoys what he does for clients and users.</p>
                     <p>Patrick is also an Eagle Scout (2009), He also enjoys snowmobiling, learning new technologies from hardware to new programming techniques, playing video games, and spending time with his wife and kids. Please email Patrick at <a href="mailto:thompsonpa2014@gmail.com">thompsonpa2014@gmail.com</a> or go to <a href="http://lifeiscode.com">lifeiscode.com</a> to contact Patrick.</p>
                 </div>
             </div>
@@ -221,7 +240,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 isogrid">
                             <div class="grid">
                                 <div class="element-item software" data-category="software">
                                     <span class=" btn btn-primary software" data-category="software">Azure Devops</span>
@@ -311,7 +330,7 @@
                                 <img src="./Images/Logos/lifeiscodelogo.png" class="mr-3" alt="..." style="width:120px;">
                                 <div class="media-body">
                                     <h5 class="mt-0">Life is Code, <br /><span style="font-size:14px;">Co-Owner / Web Developer</span></h5>
-                                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                                    <p>After a few years working with Northern Light Health a non-profit organization, Patrick started to do work with local businesses and organizations to help them with online web presence from basic websites to working applications on the web. After a few months Patrick then teamed up with a co-worker who was getting in some local work and they formed Life Is Code. Where they do Website hosting, Desktop Programming, Mobile Apps, and Websites. The collabritive join has been a steady increase work and they both have been able to provide quality products to local businesses around Maine at an affordable price.  </p>
                                 </div>
                             </div>
                             <br />
@@ -319,7 +338,7 @@
                                 <img src="./Images/Logos/NLHlogo.png" class="mr-3" alt="..." style="width:120px;">
                                 <div class="media-body">
                                     <h5 class="mt-0">Northern Light Health, <br /><span style="font-size:14px;">Web Developer</span></h5>
-                                    <p>Light House Web Solutions was absorbed into a Maine Health Care organization called EMHS (Eastern Maine Healthcare System), Patrick continued with the same asp.net work as Light House Web Solutions just not for multiple organizations, the focus changed towards one organization and supporting their muliple web sites and web application. Patrick worked on several projects to save the organization thousands of dollars on third party applications and systems.</p>
+                                    <p>Light House Web Solutions was absorbed into a Maine HealthCare organization called EMHS (Eastern Maine Healthcare System) now re-branded to Northern Light Health, Patrick continued with the same asp.net work as Light House Web Solutions just not for multiple organizations, the focus changed towards one organization and supporting their muliple web sites and web application. Patrick worked on several projects to save the organization thousands of dollars on third party applications and systems.</p>
                                 </div>
                             </div>
                             <br />
