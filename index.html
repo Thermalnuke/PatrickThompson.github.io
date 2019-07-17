@@ -1,30 +1,24 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>PT - Home</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>PT - Home</title>
-
     <!-- Custom styles for this template -->
     <link rel="icon" href="data:;base64,=">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link href="./CSS/cover.css" rel="stylesheet">
     <link href="./CSS/animations.css" rel="stylesheet">
     <style type="text/css">
-
         :root #content > #right > .dose > .dosesingle,
         :root #content > #center > .dose > .dosesingle {
             display: none !important;
         }
     </style>
-
 </head>
-
 <body class="text-center">
     <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto"></header>
@@ -37,13 +31,11 @@
                     <a class="btn btn-primary btn-lg" href="./about.html" role="button">Learn More About Me</a>
                 </div>
             </div>
-            <!--<p class="lead">
-                <a href="https://getbootstrap.com/docs/4.3/examples/cover/#" class="btn btn-lg btn-secondary">Learn more</a>
-            </p>-->
+
         </main>
         <footer class="mastfoot mt-auto">
             <div class="inner">
-                <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                <!-- add footer text if needed -->
             </div>
         </footer>
     </div>
@@ -52,30 +44,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-
-        jQuery(function ($) {
-            // Function which adds the 'animated' class to any '.animatable' in view
-            var doAnimations = function () {
-                // Calc current offset and get all animatables
-                var offset = $(window).scrollTop() + $(window).height(),
-                    $animatables = $('.animatable');
-                // Unbind scroll handler if we have no animatables
-                if ($animatables.length == 0) {
-                    $(window).off('scroll', doAnimations);
-                }
-                // Check all animatables and animate them if necessary
-                $animatables.each(function (i) {
-                    var $animatable = $(this);
-                    if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-                        $animatable.removeClass('animatable').addClass('animated');
-                    }
-                });
-            };
-            // Hook doAnimations on scroll, and trigger a scroll
-            $(window).on('scroll', doAnimations);
-            $(window).trigger('scroll');
-        });
-    </script>
+    <script src="./js/Custom.js"></script>
 </body>
 </html>

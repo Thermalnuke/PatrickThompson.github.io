@@ -11,9 +11,7 @@ body {
 }
 
 
-
 /* ---- isotope ---- */
-
 .grid {
     /*border: 1px solid #333;*/
 }
@@ -26,10 +24,42 @@ body {
     }
 
 /* ---- .element-item ---- */
-
 .element-item {
     position: relative;
     float: left;
     padding: 5px;
+}
+
+/* ---- Custom Styles for about page ---- */
+@media (min-width: 992px) {
+    .nav-logo-hider {
+        display: none;
+    }
+
+    .isogrid {
+        height: 200px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .home-hider {
+        display: none;
+    }
+
+    .isogrid {
+        height: 350px !important;
+    }
+}
+
+.ProfileImageHover img:last-child {
+    display: none
+}
+
+.ProfileImageHover:hover img:first-child {
+    display: none
+}
+
+.ProfileImageHover:hover img:last-child {
+    display: inline-block
 }
 
